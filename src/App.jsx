@@ -9,7 +9,7 @@ function App() {
         // Fetch da API na rota localhost/post
         const fetchPost = async () => {
             try {
-                const response = await fetch("//localhost:3000/");
+                const response = await fetch("https://fastify-docker.onrender.com");
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
